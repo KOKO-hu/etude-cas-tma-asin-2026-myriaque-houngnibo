@@ -31,3 +31,7 @@ Le script `sql/reparer_inscriptions.sql` s'applique à l'export, puis une second
 node scripts/appliquer-reparation.mjs base_inscriptions.sql
 ```
 
+## Rapport d'incident
+
+`RAPPORT_INC-206.md` décrit la panne du 19 novembre 2026 au matin : chronologie, cause, impact, correction et actions de suivi.
+
