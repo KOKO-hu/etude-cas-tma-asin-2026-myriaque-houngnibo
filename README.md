@@ -23,3 +23,11 @@ npm run analyse -- journal_production.log
 npm test
 ```
 
+## Reprise des données
+
+Le script `sql/reparer_inscriptions.sql` s'applique à l'export, puis une seconde fois sans rien modifier. Il renumérote les numéros de table en double, retire les inscriptions en double hors Lokossa, puis pose les index d'unicité. Lokossa n'est pas réduite : la liste et la décision sont dans `sql/LOKOSSA.md`.
+
+```bash
+node scripts/appliquer-reparation.mjs base_inscriptions.sql
+```
+
